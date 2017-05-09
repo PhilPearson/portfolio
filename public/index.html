@@ -30,16 +30,26 @@
             margin-right: 0;
         }
         .footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 80px;
+            margin-top: 40px;
         }
         .footer .fa {
             font-size: 20px;
             text-decoration: none;
             line-height: inherit;
         }
+        
+        .img-site {
+            margin-top: 25px;
+            overflow: hidden;
+            width: 350px;
+            height: 350px;
+        }
+        .img-site img {
+            display:block;
+            height: 350px;
+            width: auto;
+        }
+
     </style>
 </head>
 <body>
@@ -49,43 +59,59 @@
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
         <div class="containter">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Phil Pearson</a>
+                <a class="navbar-brand" href="#" target="">Phil Pearson</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about" target="">About</a></li>
+                <li><a href="#portfolio" target="">Portfolio</a></li>
+                <li><a href="#contact" target="">Contact</a></li>
             </ul>
         </div>
     </nav>
     <!-- End Toolbar -->
     <!-- Begin content body -->
+    <a name="about"></a>
     <div class="jumbotron">
         <div class="container">
             <h1 style="color:white;">Web Portfolio</h1>
             <div class="row">
-                <a class="btn social-icon" role="button" href="#"><i class="fa fa-facebook"></i></a>
-                <a class="btn social-icon" role="button" href="#"><i class="fa fa-twitter"></i></a>
-                <a class="btn social-icon" role="button" href="#"><i class="fa fa-github"></i></a>
-                <a class="btn social-icon" role="button" href="#"><i class="fa fa-linkedin"></i></a>
+                <a class="btn social-icon" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a class="btn social-icon" href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a class="btn social-icon" href="http://www.github.com" target="_blank"><i class="fa fa-github"></i></a>
+                <a class="btn social-icon" href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
             </div>
         </div>
     </div>
-    <div style="background-color: red; color:white;">Body</div>
+    <a name="portfolio"></a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><h3 class="text-center" style="color:white;">/ These sites below not made by me /</h3></div>
+            <div class="col-md-4 img-site"><a class="btn" href="#" target=""><img src="images/site01.jpg"></a></div>
+            <div class="col-md-4 img-site"><a class="btn" href="#" target=""><img src="images/site02.jpg"></a></div>
+            <div class="col-md-4 img-site"><a class="btn" href="#" target=""><img src="images/site03.jpg"></a></div>
+            <div class="col-md-4 img-site"><a class="btn" href="#" target=""><img src="images/site04.jpg"></a></div>
+            <div class="col-md-4 img-site"><a class="btn" href="#" target=""><img src="images/site05.jpg"></a></div>
+            <div class="col-md-4 img-site"><a class="btn" href="#" target=""><img src="images/site06.jpg"></a></div>
+            <div class="col-md-4 img-site"><a class="btn" href="#" target=""><img src="images/site07.jpg"></a></div>
+            <div class="col-md-4 img-site"><a class="btn" href="#" target=""><img src="images/site08.jpg"></a></div>
+            <div class="col-md-4 img-site"><a class="btn" href="#" target=""><img src="images/site09.jpg"></a></div>
+        </div>
+    </div>
     <!-- End content body -->
     <!-- Begin footer -->
-    <div style="background-color: green; color:white;">
-        <footer class="footer">
-            <div class="container">
-                <p class="text-center text-primary">Phil Pearson Designs 2017</p>
+    <a name="contact"></a>
+    <div class="container">
+        <div>
+            <footer class="footer">
+                <p class="text-center text-primary" style="color:white;">Phil Pearson Designs 2017</p>
                 <div class="row text-center">
-                    <a class="btn" role="button" href="#"><i class="fa fa-facebook"></i></a>
-                    <a class="btn" role="button" href="#"><i class="fa fa-twitter"></i></a>
-                    <a class="btn" role="button" href="#"><i class="fa fa-github"></i></a>
-                    <a class="btn" role="button" href="#"><i class="fa fa-linkedin"></i></a>
+                    <a class="btn" role="button" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a class="btn" role="button" href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a class="btn" role="button" href="http://www.github.com" target="_blank"><i class="fa fa-github"></i></a>
+                    <a class="btn" role="button" href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </div>
     <!-- End footer -->
 
